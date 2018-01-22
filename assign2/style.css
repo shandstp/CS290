@@ -1,0 +1,60 @@
+/*Travis Shands 933337017 CS290 Assignment 2*/
+table {
+  border-style: outset;
+}
+
+tbody.stats tr:nth-of-type(even) {
+  background-color: greenyellow;
+}
+
+tbody.stats tr:nth-of-type(odd) {
+  background-color: cyan;
+}
+
+caption{
+  font-size: 20;
+  font-weight: bold;
+}
+
+th {
+  border-style: ridge;
+}
+
+td {
+  border-style: inset;
+}
+
+.colum1 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.outer-content {
+  position:relative;
+  border: 20px;
+  left: 0%;
+  width: 75%;
+  height: 50px;
+  background-color: pink;
+}
+
+.inner-content {
+  width: 75%;
+  height: 25px;
+  background-color: blue;
+  position: relative;
+  top: 10pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form {
+  width: 41em;
+  border-radius: 10px;
+  border-style:solid;
+}
+
+fieldset {
+  width: 37em;
+  border-radius: 10px;
+}
