@@ -1,0 +1,13 @@
+<h1>{{type}} request received</h1>
+<h2>Query Items</h2> 
+<ol>
+   {{#each qitem}}
+      <li>{{this.name}}: {{this.value}}
+   {{/each}}
+</ol>
+<h2>Body Items</h2>
+<ul>
+   {{#each bitem}}
+      <li>{{this.name}}: {{this.value}}
+   {{/each}}
+</ul>
