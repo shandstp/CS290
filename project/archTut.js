@@ -11,9 +11,28 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 7017);
 
-app.get('/', function(req,res,next){
+app.get('/', function(req,res){
    var context = {};
    res.render('home', context);
+   return;
+});
+
+app.get('/getStarted', function(req,res){
+   var context = {};
+   res.render('getStarted', context);
+   return;
+});
+
+app.get('/faq', function(req,res){
+   var context = {};
+   res.render('faq', context);
+   return;
+});
+
+app.get('/about', function(req,res){
+   var context = {};
+   res.render('about', context);
+   return;
 });
 
 app.use(function(req,res){
