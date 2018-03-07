@@ -20,9 +20,7 @@ app.get('/',function(req,res,next){
     return;
   }
   context.name = req.session.name;
-  context.city = req.session.city;
-  context.temp = req.session.temp;
-  context.toDoCount = req.session.toDo.length || 0;
+  toDo.length || 0;
   context.toDo = req.session.toDo || [];
   console.log(context.toDo);
   res.render('toDo',context);
