@@ -2,14 +2,14 @@ body {
    background-image:url('archWall.png');
    background-repeat:no-repeat;
    background-position:center top;
-   background-position:relative;
+   background-position:absolute;
 }
 
 #BGcitation {
    color:red;
    position:absolute;
-   bottom:0;
-   right:0;
+   bottom:8px;
+   right:16px;
 }
 
 ul {
@@ -39,4 +39,10 @@ li a:hover {
 
 h1 {
    color:#1793d0;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+   width:70%;
+   margin:auto;
 }

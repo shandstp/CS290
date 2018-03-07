@@ -11,6 +11,8 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 app.set('port', 7017);
 
+var context = {};
+
 app.get('/', function(req,res){
    var context = {};
    res.render('home', context);
@@ -18,7 +20,7 @@ app.get('/', function(req,res){
 });
 
 app.get('/getStarted', function(req,res){
-   var context = {};
+   //var context = {};
    res.render('getStarted', context);
    return;
 });
